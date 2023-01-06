@@ -1,0 +1,30 @@
+What is JSX?
+=>JSX is html like syntax
+
+What are the Super powers of JSX?
+=>Specifying children with JSX
+      const element = (
+                          <div>
+                            <h1>Hello!</h1>
+                            <h2>Good to see you here.</h2>
+                          </div>
+                        );
+=>JSX prevents injection Attacks
+  It is safe to embed user input in JSX:
+
+const title = response.potentiallyMaliciousInput;
+// This is safe:
+const element = <h1>{title}</h1>;
+=>JSX Represents Objects
+=>JSX is an expression too.
+
+(Q) What is the role of "type" attribute in script tag? What Options can I use there?
+=>Type attribute specifies the type of script
+Module option can be used.
+
+
+=>{TitleComponent}: This value describes the TitleComponent as a javascript expression or a variable. The {} can embed a javascript expression or a variable inside it.
+<TitleComponent/> : This value represents a Component that is basically returning Some JSX value. In simple terms TitleComponent a function that is returning
+a JSX value. A component is written inside the {<  />} expression.
+<TitleComponent></TitleComponent> : <TitleComponent /> and <TitleComponent></TitleComponent> are equivalent only when < TitleComponent /> has no child components. 
+The opening and closing tags are created to include the child components.
